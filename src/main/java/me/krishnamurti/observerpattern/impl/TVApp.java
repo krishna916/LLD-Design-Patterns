@@ -1,0 +1,16 @@
+package me.krishnamurti.observerpattern.impl;
+
+import me.krishnamurti.observerpattern.Observer;
+
+public class TVApp implements Observer {
+    private float currentTemperature;
+
+    @Override
+    public void update(float update) {
+        this.currentTemperature = update;
+    }
+
+    public void display() {
+        System.out.println("TV screen says: " + currentTemperature);
+    }
+}
