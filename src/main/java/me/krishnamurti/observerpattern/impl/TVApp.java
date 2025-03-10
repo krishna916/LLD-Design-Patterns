@@ -10,6 +10,13 @@ public class TVApp implements Observer {
         this.currentTemperature = update;
     }
 
+
+    public float currentTemperature()
+    {
+        return this.currentTemperature;
+    }
+
+
     public void display() {
         System.out.println("TV screen says: " + currentTemperature);
     }

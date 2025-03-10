@@ -10,7 +10,14 @@ public class MobileApp implements Observer {
         this.currentTemperature = update;
     }
 
+    public float currentTemperature()
+    {
+        return this.currentTemperature;
+    }
+
     public void display() {
         System.out.println("Mobile screen says: " + currentTemperature);
     }
+
+
 }
